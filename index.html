@@ -8,12 +8,24 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    <div class="LeftImg">
 
+    <div class="LeftImg">
+        <div class="logoInImg">
+        </div>
+        <p class="sign">PHOTO BY E.B. </p>
     </div>
+
+    <!-- *****************-->
     <div class="rightSide">
 
-        <div class="header"></div>
+        <div class="header">
+            <div class="headerStatement">
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cum explicabo iure officiis placeat veritatis quae nesciunt fugiat deserunt quo doloremque consequuntur saepe, deleniti labore porro qui, ullam sed laborum."</p>
+            </div>
+            <div class="headerStatementScreen">
+                <p>This is the phone Header!</p>
+            </div>
+        </div>
 
         <!-- *****************   -->
 
@@ -23,32 +35,33 @@
                     <legend> <h1> SIGN UP </h1> </legend>
                     <div class="fullScreenRow">
                         <div class="input">
-                           <label for="fName"> FIRST NAME </label>
+                           <label for="fName"> * FIRST NAME </label>
                            <input type="text" id="fName"  />
                         </div>
                         <div class="input">
-                           <label for="lName"> LAST NAME </label>
+                           <label for="lName"> * LAST NAME </label>
                            <input type="text"  id="lName" />
                         </div>
                     </div>
                     <div class="fullScreenRow">
                         <div class="input">
-                            <label for="email"> EMAIL </label>
-                            <input type="email" id="email" pattern="^\S+@\S+\.\S+$" />
+                            <label for="email"> * EMAIL </label>
+                            <input type="email" id="email" pattern="^\S+@\S+\.\S+$" placeholder="JOHN@DOE.COM"/>
                         </div>
                         <div class="input">
                             <label for="phone"> PHONE NUMBER </label>
-                            <input type="tel" id="phone" required pattern="^[^a-zA-Z]*$"/>
+                            <input type="tel" id="phone" pattern="^[^a-zA-Z]*$"/>
                         </div>
                     </div>
                     <div class="fullScreenRow">
                         <div class="input">
-                            <label for="password"> PASSWORD </label>
-                            <input type="password" id="password" minlength="8" />
+                            <label for="password"> * PASSWORD </label>
+                            <input type="password" id="password" minlength="8" placeholder="8 CHARACTERS MINIMUM" />
                         </div>
                         <div class="input">
-                            <label for="confirmPassword"> CONFIRM PASSWORD </label>
+                            <label for="confirmPassword"> * CONFIRM PASSWORD </label>
                             <input type="password" id="confirmPassword" />
+                            <div class="passErrorMsg"></div>
                         </div>
                     </div>
                 </fieldset>

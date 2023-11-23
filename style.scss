@@ -1,15 +1,17 @@
 
 body {
+    background-color: black;
     display: flex;
     width: 100vw;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .LeftImg {
+    position: relative;
     flex:1;
-    background: url(./img/P1070298.JPG) center;
+    background: no-repeat url(./img/P1070298.JPG) center black;
 }
 
 .rightSide {
@@ -19,14 +21,14 @@ body {
 }
 
 .header,.footer {
-    flex: 1;
+    flex: 1 1 0;
     background-color: #eee;
 }
 .form {
     z-index: 1001;
-    padding: 2rem;
-    background-color: beige;
-    // flex: 0 1 auto;
+    padding: 1rem;
+    background-color: #fff;
+    flex: 1 1 0;
     box-shadow: 2px 2px 6px gray;
 }
 
@@ -36,6 +38,7 @@ body {
 }
 
 input {
+    height: 1.1rem;
     width: 12rem;
     border: 2px solid #eee;
     border-radius: 4px;
@@ -58,8 +61,12 @@ fieldset {
     border: none;
 }
 
+legend {
+    padding-left: 20%;
+}
+
 .fullScreenRow {
-    margin: 2rem 5rem 2rem;
+    margin: 1rem 5rem 1rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -73,17 +80,61 @@ fieldset {
     // margin: 0 auto;
     border-radius: 8px;
     box-shadow: 2px 2px 3px gray;
+
+    &:hover {
+        background-color: grayscale($color: #ccc3c3);
+    }
 }
 
 .fullScreenRow:has(button) {
+    padding: 1rem;
     flex-direction: column;
     & a {
         color:cornflowerblue;
     }
 
 }
+.headerStatement {
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.headerStatementScreen {
+    display: none;
+}
+
+.logoInImg {
+    background: center/100px url(./img/noun-buddha-1764298.png) gray no-repeat ;
+    min-height: 100px;
+    opacity: 40%;
+    position: relative;
+    top: 75%;
+}
+.sign {
+    text-wrap:nowrap;   
+    margin: 0;
+    position:absolute;
+    bottom:1px;
+    right: 8px;
+    color:white;
+    font-size: .8rem;
+}
+.input:has(#confirmPassword) {
+    position: relative;
+}
+
+.passErrorMsg {
+    position:absolute;
+    top: 45px;
+}
+
 
 @media only screen and (max-width: 600px) {
+    body {
+        overflow: hidden;
+    }
     .fullScreenRow {
         display: flex;
         flex-flow: column;
@@ -107,6 +158,22 @@ fieldset {
 
     .header {
         background: url(./img/P1070298.JPG) 100% 25%;
+    }
+
+    .headerStatement {
+        display: none;
+    }
+
+    .headerStatementScreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        margin: auto auto;
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: white;
+        height: 100%;
     }
 
 
