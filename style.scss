@@ -24,9 +24,29 @@ body {
     flex-direction: column;
 }
 
+.headerStatement {
+    font-family: julee;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.4rem;
+    position: relative;
+    text-shadow: 1px 1px 2px;
+
+    & cite {
+        position: relative;
+        top:20px;
+        left: 80%;
+    }
+}
+
 .header,.footer {
     flex: 1 1 0;
     background-color: #eee;
+}
+strong {
+    font-size: 1.3em;
+    font-weight: 400;
 }
 .form {
     z-index: 1001;
@@ -100,13 +120,7 @@ legend {
     }
 
 }
-.headerStatement {
-    width: 75%;
-    margin: 0 auto;
-    padding: 1rem;
-    font-weight: 800;
-    font-size: 1.1rem;
-}
+
 .headerStatementScreen {
     display: none;
 }
@@ -195,10 +209,16 @@ legend {
         align-items: center;
         width: 75%;
         margin: auto auto;
-        font-weight: 800;
-        font-size: 1.1rem;
+        // font-weight: 800;
+        font-size: .8rem;
+        text-wrap: nowrap;
         color: white;
         height: 100%;
+        font-family: julee, sans-serif;
+    }
+
+    cite {
+        padding-left: 60%;
     }
 
 

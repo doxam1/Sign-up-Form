@@ -22,10 +22,16 @@
 
         <div class="header">
             <div class="headerStatement">
-            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cum explicabo iure officiis placeat veritatis quae nesciunt fugiat deserunt quo doloremque consequuntur saepe, deleniti labore porro qui, ullam sed laborum."</p>
+            <p><blockquote>
+                <strong> SILENCE </strong> IS A SOURCE OF GREAT <strong> STRENGTH.</strong> <br>
+                <cite> - LAO TZO </cite>
+            </blockquote></p>
             </div>
             <div class="headerStatementScreen">
-                <p>This is the phone Header!</p>
+                <p><blockquote>
+                    <strong> SILENCE </strong> IS A SOURCE OF GREAT <strong> STRENGTH.</strong> <br>
+                    <cite> - LAO TZO </cite>
+                </blockquote></p>
             </div>
         </div>
 
@@ -38,31 +44,31 @@
                     <div class="fullScreenRow">
                         <div class="input">
                            <label for="fName"> * FIRST NAME </label>
-                           <input type="text" id="fName"  />
+                           <input type="text" id="fName"  required/>
                         </div>
                         <div class="input">
                            <label for="lName"> * LAST NAME </label>
-                           <input type="text"  id="lName" />
+                           <input type="text"  id="lName" required/>
                         </div>
                     </div>
                     <div class="fullScreenRow">
                         <div class="input">
                             <label for="email"> * EMAIL </label>
-                            <input type="email" id="email" pattern="^\S+@\S+\.\S+$" placeholder="JOHN@DOE.COM"/>
+                            <input type="email" id="email" pattern="^\S+@\S+\.\S+$" required placeholder="JOHN@DOE.COM"/>
                         </div>
                         <div class="input">
                             <label for="phone"> PHONE NUMBER </label>
-                            <input type="tel" id="phone" pattern="^[^a-zA-Z]*$"/>
+                            <input type="tel" id="phone" required pattern="^[^a-zA-Z]*$"/>
                         </div>
                     </div>
                     <div class="fullScreenRow">
                         <div class="input">
                             <label for="password"> * PASSWORD </label>
-                            <input type="password" id="password" minlength="8" placeholder="8 CHARACTERS MINIMUM" />
+                            <input type="password" id="password" required minlength="8" placeholder="8 CHARACTERS MINIMUM" />
                         </div>
                         <div class="input">
                             <label for="confirmPassword"> * CONFIRM PASSWORD </label>
-                            <input type="password" id="confirmPassword" />
+                            <input type="password" id="confirmPassword" required/>
                             <div class="passErrorMsg"></div>
                         </div>
                     </div>
