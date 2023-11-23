@@ -13,7 +13,7 @@ body {
 }
 
 .rightSide {
-    flex:2.5;
+    flex:2;
     display: flex;
     flex-direction: column;
 }
@@ -26,8 +26,7 @@ body {
     z-index: 1001;
     padding: 2rem;
     background-color: beige;
-    // height: max-content;
-    flex: 0 1 auto;
+    // flex: 0 1 auto;
     box-shadow: 2px 2px 6px gray;
 }
 
@@ -55,20 +54,30 @@ fieldset {
 @media only screen and (max-width: 600px) {
     .fullScreenRow {
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        flex-flow: column;
+        margin: 1rem;
+        gap: 1rem;
+
     }
+
 
     .LeftImg {
         display: none;
     }
 
     .footer {
-        background: url(./img/P1070298.JPG) bottom;
+        background: url(./img/P1070298.JPG) 100% 85%;
     }
 
     .header {
-        background: url(./img/P1070298.JPG) top;
+        background: url(./img/P1070298.JPG) 100% 25%;
     }
+
+
+
+    // .footer, .form, .header {
+    //     flex: 1;
+    // }
+
 
 }
