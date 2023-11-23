@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer> </script>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="LeftImg">
+
+    </div>
+    <div class="rightSide">
+
+        <div class="header"></div>
+
+        <!-- *****************   -->
+
+        <div class="form">
+            <form>
+                <fieldset>
+                    <legend> <h1> SIGN UP </h1> </legend>
+                    <div class="fullScreenRow">
+                        <div class="input">
+                           <label for="fName"> FIRST NAME </label>
+                           <input type="text" id="fName" required />
+                        </div>
+                        <div class="input">
+                           <label for="lName"> LAST NAME </label>
+                           <input type="text" required id="lName" />
+                        </div>
+                    </div>
+                    <div class="fullScreenRow">
+                        <div class="input">
+                            <label for="email"> EMAIL </label>
+                            <input type="email" required id="email" pattern="^\S+@\S+\.\S+$" />
+                        </div>
+                        <div class="input">
+                            <label for="phone"> PHONE NUMBER </label>
+                            <input type="tel" id="phone" required />
+                        </div>
+                    </div>
+                    <div class="fullScreenRow">
+                        <div class="input">
+                            <label for="password"> PASSWORD </label>
+                            <input type="password" id="password" minlength="8" />
+                        </div>
+                        <div class="input">
+                            <label for="confirmPassword"> CONFIRM PASSWORD </label>
+                            <input type="password" id="confirmPassword" />
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+             
+        </div>
+
+        <!--  ****************   -->
+        <div class="footer"></div>
+
+
+    </div>    
+</body>
+</html>
