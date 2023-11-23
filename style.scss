@@ -37,6 +37,21 @@ body {
 
 input {
     width: 12rem;
+    border: 2px solid #eee;
+    border-radius: 4px;
+
+    &:focus {
+        // background-color:  cadetblue;
+        outline: 1px solid rgb(59, 59, 255) ;
+        box-shadow: 3px 3px 3px #bbb;
+        outline-style: groove;
+    }
+
+    &:user-invalid {
+        outline: 1px solid red;
+    }
+
+
 }
 
 fieldset {
@@ -50,6 +65,23 @@ fieldset {
     gap: 2rem;
 }
 
+.signUpBtn {
+    background-color: gray;
+    border: none;
+    height: 40px;
+    width: 120px;
+    // margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.fullScreenRow:has(button) {
+    flex-direction: column;
+    & a {
+        color:cornflowerblue;
+    }
+
+}
 
 @media only screen and (max-width: 600px) {
     .fullScreenRow {
@@ -58,6 +90,10 @@ fieldset {
         margin: 1rem;
         gap: 1rem;
 
+    }
+
+    .haveAccount {
+        color: white;
     }
 
 
@@ -72,12 +108,6 @@ fieldset {
     .header {
         background: url(./img/P1070298.JPG) 100% 25%;
     }
-
-
-
-    // .footer, .form, .header {
-    //     flex: 1;
-    // }
 
 
 }

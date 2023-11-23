@@ -18,27 +18,27 @@
         <!-- *****************   -->
 
         <div class="form">
-            <form>
+            <form id="signUpForm">
                 <fieldset>
                     <legend> <h1> SIGN UP </h1> </legend>
                     <div class="fullScreenRow">
                         <div class="input">
                            <label for="fName"> FIRST NAME </label>
-                           <input type="text" id="fName" required />
+                           <input type="text" id="fName"  />
                         </div>
                         <div class="input">
                            <label for="lName"> LAST NAME </label>
-                           <input type="text" required id="lName" />
+                           <input type="text"  id="lName" />
                         </div>
                     </div>
                     <div class="fullScreenRow">
                         <div class="input">
                             <label for="email"> EMAIL </label>
-                            <input type="email" required id="email" pattern="^\S+@\S+\.\S+$" />
+                            <input type="email" id="email" pattern="^\S+@\S+\.\S+$" />
                         </div>
                         <div class="input">
                             <label for="phone"> PHONE NUMBER </label>
-                            <input type="tel" id="phone" required />
+                            <input type="tel" id="phone" required pattern="^[^a-zA-Z]*$"/>
                         </div>
                     </div>
                     <div class="fullScreenRow">
@@ -57,7 +57,14 @@
         </div>
 
         <!--  ****************   -->
-        <div class="footer"></div>
+        <div class="footer">
+            <div>
+                <div class="fullScreenRow">
+                    <button class='signUpBtn' type="submit" form="signUpForm"> SIGN UP </button>
+                    <div class="haveAccount"> already have an account? <a href=''>SIGN IN</a></div>
+                </div>
+            </div>
+        </div>
 
 
     </div>    
