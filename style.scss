@@ -15,7 +15,7 @@ body {
 .LeftImg {
     position: relative;
     flex:1;
-    background: no-repeat url(./img/P1070298.JPG) center black;
+    background: url(./img/P1070298.JPG) no-repeat center/cover black;
 }
 
 .rightSide {
@@ -60,6 +60,15 @@ strong {
 .input {
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    &:has(input:user-valid):not(:has(.passNotConfirmed))::after {
+        content : '✓';
+        color: green;
+        position: absolute;
+        bottom : 0;
+        right: 0;
+    }
 }
 
 input {
@@ -173,6 +182,7 @@ legend {
 @media only screen and (max-width: 600px) {
     body {
         overflow: hidden;
+        height: 100svh;
     }
     .fullScreenRow {
         display: flex;
@@ -219,6 +229,14 @@ legend {
 
     cite {
         padding-left: 60%;
+    }
+
+    :has(input:user-valid):not(:has(.passNotConfirmed))::after {
+        content : '✓';
+        color: green;
+        position: absolute;
+        bottom : 0;
+        left: 11.5rem;
     }
 
 
