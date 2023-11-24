@@ -236,13 +236,13 @@ legend {
         padding-left: 60%;
     }
 
-    :has(input:user-valid):not(:has(.passNotConfirmed))::after {
-        content : '✓';
-        color: green;
-        position: absolute;
-        bottom : 0;
-        left: 11.5rem;
-    }
+    // :has(input:user-valid):not(:has(.passNotConfirmed))::after {
+    //     content : '✓';
+    //     color: green;
+    //     position: absolute;
+    //     bottom : 0;
+    //     left: 11.5rem;
+    // }
 
 
 }
