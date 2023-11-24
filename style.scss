@@ -24,6 +24,15 @@ body {
     flex-direction: column;
 }
 
+label {
+    transition: .3s ease;
+
+    &:has(+ input:focus) {
+        font-size: 90%;
+        transform: translate(-3px, -5px) ;
+    }
+}
+
 .headerStatement {
     font-family: julee;
     width: 75%;
