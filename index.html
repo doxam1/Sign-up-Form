@@ -44,31 +44,31 @@
                     <div class="fullScreenRow">
                         <div class="input">
                            <label for="fName"> * FIRST NAME </label>
-                           <input type="text" id="fName"  autocomplete="cc-given-name"/>
+                           <input required type="text" id="fName"  autocomplete="cc-given-name"/>
                         </div>
                         <div class="input">
                            <label for="lName"> * LAST NAME </label>
-                           <input type="text"  id="lName" autocomplete="cc-family-name"/>
+                           <input required type="text"  id="lName" autocomplete="cc-family-name"/>
                         </div>
                     </div>
                     <div class="fullScreenRow">
                         <div class="input">
                             <label for="email"> * EMAIL </label>
-                            <input type="email" id="email" pattern="^\S+@\S+\.\S+$" autocomplete="email" placeholder="JOHN@DOE.COM"/>
+                            <input required type="email" id="email" pattern="^\S+@\S+\.\S+$" autocomplete="email" placeholder="JOHN@DOE.COM"/>
                         </div>
                         <div class="input">
                             <label for="phone"> PHONE NUMBER </label>
-                            <input type="tel" id="phone" autocomplete="tel" pattern="^[^a-zA-Z]*$"/>
+                            <input required type="tel" id="phone" autocomplete="tel" pattern="^[^a-zA-Z]*$"/>
                         </div>
                     </div>
                     <div class="fullScreenRow">
                         <div class="input">
                             <label for="password"> * PASSWORD </label>
-                            <input type="password" id="password" required minlength="8" placeholder="8 CHARACTERS MINIMUM" autocomplete="off" />
+                            <input required type="password" id="password" required minlength="8" placeholder="8 CHARACTERS MINIMUM" autocomplete="off" />
                         </div>
                         <div class="input">
                             <label for="confirmPassword"> * CONFIRM PASSWORD </label>
-                            <input type="password" id="confirmPassword" class="passNotConfirmed" minlength="8" autocomplete="off"/>
+                            <input required type="password" id="confirmPassword" class="passNotConfirmed" minlength="8" autocomplete="off"/>
                             <div class="passErrorMsg"></div>
                         </div>
                     </div>
