@@ -9,7 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .LeftImg {
@@ -187,7 +187,7 @@ legend {
 
 @media only screen and (max-width: 600px) {
     body {
-        overflow: hidden;
+        overflow: auto;
         height: 100svh;
     }
     .fullScreenRow {
