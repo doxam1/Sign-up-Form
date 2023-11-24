@@ -62,13 +62,15 @@ strong {
     flex-direction: column;
     position: relative;
 
-    &:has(input:user-valid):not(:has(.passNotConfirmed))::after {
-        content : '✓';
-        color: green;
-        position: absolute;
-        bottom : 0;
-        right: 0;
-    }
+    // &:has(input:valid):not(:has(.passNotConfirmed))::after {
+    //     content : '✓';
+    //     color: green;
+    //     position: absolute;
+    //     bottom : 0;
+    //     right: 0;
+    //  !! not supported in firefox, fixed with :is and background image.
+    // }
+  
 }
 
 input {
@@ -76,6 +78,13 @@ input {
     width: 12rem;
     border: 2px solid #eee;
     border-radius: 4px;
+
+    &:is(:valid):not(.passNotConfirmed) {
+        background: right no-repeat url(./img/check.svg);
+        // for firefox compatability.
+    }
+
+
 
     &:focus {
         outline: 1px solid rgb(59, 59, 255) ;
@@ -216,7 +225,6 @@ legend {
         align-items: center;
         width: 75%;
         margin: auto auto;
-        // font-weight: 800;
         font-size: .8rem;
         text-wrap: nowrap;
         color: white;
