@@ -20,6 +20,6 @@ submitBtn.addEventListener('click', (e) => {
         errorMsg.textContent = '*passwords do not match'
         setTimeout(() => {
             errorMsg.textContent = '';
-        }, 1000);        
+        }, 1800);        
     }
 })
