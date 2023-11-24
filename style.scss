@@ -79,7 +79,7 @@ input {
     border: 2px solid #eee;
     border-radius: 4px;
 
-    &:is(:valid):not(.passNotConfirmed) {
+    &:valid:not(.passNotConfirmed) {
         background: right no-repeat url(./img/check.svg);
         // for firefox compatability.
     }
@@ -235,14 +235,6 @@ legend {
     cite {
         padding-left: 60%;
     }
-
-    // :has(input:user-valid):not(:has(.passNotConfirmed))::after {
-    //     content : '✓';
-    //     color: green;
-    //     position: absolute;
-    //     bottom : 0;
-    //     left: 11.5rem;
-    // }
 
 
 }

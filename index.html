@@ -44,11 +44,11 @@
                     <div class="fullScreenRow">
                         <div class="input">
                            <label for="fName"> * FIRST NAME </label>
-                           <input required type="text" id="fName"  autocomplete="cc-given-name"/>
+                           <input required type="text" id="fName"  pattern="[^0-9]*$" autocomplete="cc-given-name"/>
                         </div>
                         <div class="input">
                            <label for="lName"> * LAST NAME </label>
-                           <input required type="text"  id="lName" autocomplete="cc-family-name"/>
+                           <input required type="text"  id="lName" pattern="[^0-9]*$" autocomplete="cc-family-name"/>
                         </div>
                     </div>
                     <div class="fullScreenRow">
