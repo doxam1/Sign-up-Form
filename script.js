@@ -23,3 +23,29 @@ submitBtn.addEventListener('click', (e) => {
         }, 1800);        
     }
 })
+
+const showHidePass = document.querySelector('.showHidePass');
+let passShow = false;
+
+window.onload = () => showHidePass.style.background = 'right/80% no-repeat url("./img/eye.svg")';
+
+password.addEventListener('mouseover', () => {
+    if (passShow == false) {
+    showHidePass.style.background = 'right/80% no-repeat url("./img/eye.svg")';
+    } else if (passShow == true) {
+        showHidePass.style.background = 'right/80% no-repeat url("./img/eye-off.svg")';
+    }
+})
+
+showHidePass.addEventListener('click', ()=> {
+    if (passShow == false) {
+        showHidePass.style.background = 'right/80% no-repeat url("./img/eye-off.svg")';
+        password.setAttribute('type', 'text');
+        passShow = true;
+    } else if (passShow == true) {
+        showHidePass.style.background = 'right/80% no-repeat url("./img/eye.svg")'
+        password.setAttribute('type', 'password');
+        passShow = false;
+    }});
+
+// passLine.addEventListener('mouseout', ()=> passShowImg.style.background = '')
